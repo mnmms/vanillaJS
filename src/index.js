@@ -1,3 +1,6 @@
-import '../styles.css';
+import styles from '../styles.css';
 
-// console.log("!!");
+const body = document.body;
+const root = document.querySelector('#root');
+
+root.innerText = "????????";
