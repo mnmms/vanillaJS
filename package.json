@@ -4,18 +4,25 @@
   "description": "",
   "main": "webpack.config.js",
   "dependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/plugin-transform-runtime": "^7.15.0",
     "@babel/preset-env": "^7.15.6",
+    "@babel/runtime": "^7.15.4",
     "acorn": "^8.4.1",
     "acorn-import-assertions": "^1.7.6",
     "ajv": "^6.12.6",
     "ajv-keywords": "^3.5.2",
     "ansi-regex": "^2.1.1",
     "ansi-styles": "^3.2.1",
+    "axios": "^0.21.4",
     "babel-loader": "^8.2.2",
     "babel-plugin-dynamic-import-node": "^2.3.3",
     "babel-plugin-polyfill-corejs2": "^0.2.2",
     "babel-plugin-polyfill-corejs3": "^0.2.4",
     "babel-plugin-polyfill-regenerator": "^0.2.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
     "big.js": "^5.2.2",
     "boolbase": "^1.0.0",
     "browserslist": "^4.16.8",
@@ -193,9 +200,11 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "devserver": "webpack-dev-server --open --progress",
     "start": "npx webpack-dev-server",
     "deploy": "gh-pages -d build",
-    "predeploy": "npx run build"
+    "predeploy": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -207,7 +216,7 @@
   "bugs": {
     "url": "https://github.com/mnmms/vanillaJS/issues"
   },
-  "homepage": "https://mnmms.github.io/vanillajs",
+  "homepage": "https://mnmms.github.io/vanillaJS/",
   "devDependencies": {
     "webpack-dev-server": "^4.3.0"
   }

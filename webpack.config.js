@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
      mode: 'development',
      plugins: [
-          new HtmlWebpackPlugin({ template: "./index.html"})
+          new HtmlWebpackPlugin({ template: "./index.html"}),
      ],
      entry: __dirname + "/src/index.js",
      module: {
@@ -19,7 +19,7 @@ module.exports = {
                     use: {
                          loader: 'babel-loader',
                          options: {
-                              presets: ['@babel/preset-env']
+                              presets: ['@babel/preset-env', '@babel/core']
                          }
                     }
                }

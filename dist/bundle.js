@@ -26,7 +26,7 @@ eval("\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles.css */ \"./styles.css\");\n\nvar body = document.body;\nvar root = document.querySelector('#root');\nroot.innerText = \"????????\";\n\n//# sourceURL=webpack://vanillajs/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles.css */ \"./styles.css\");\n // const body = document.body;\n\nvar root = document.querySelector('#root');\nroot.innerText = 111;\n\n//# sourceURL=webpack://vanillajs/./src/index.js?");
 
 /***/ }),
 
